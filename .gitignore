@@ -259,3 +259,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/gongwei01/save
+/gongwei01/data
+/gongwei01/logs_1
+/gongwei01/logs_2/pb

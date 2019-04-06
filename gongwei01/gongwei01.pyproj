@@ -2,15 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>6d70eb7a-6f4d-41d9-8889-042a20db3101</ProjectGuid>
+    <ProjectGuid>671a341c-0bd6-4a77-a93d-66dacfe7b5e2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>gongwei01.py</StartupFile>
+    <StartupFile>gongwei02.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>gongwei01</Name>
     <RootNamespace>gongwei01</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|tensorflow_python368</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="gongwei01.py" />
+    <Compile Include="gongwei02.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="load_data.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="model.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module11.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test1.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|tensorflow_python368" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
