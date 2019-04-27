@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>671a341c-0bd6-4a77-a93d-66dacfe7b5e2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>gongwei02.py</StartupFile>
+    <StartupFile>ZSD_chuyao.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,16 +26,38 @@
     <Compile Include="gongwei02.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="gongwei03.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jiao_du.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="load_data.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="load_data_ZSD.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="model.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module11.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="module2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="test1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="yu_chu_li.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="yu_chu_li_02.py" />
+    <Compile Include="ZSD_chuyao.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -238,6 +238,7 @@ def eval():
     #train_logits = tf.nn.softmax(train_logits)  # 用softmax转化为百分比数值
 
     # 载入检查点
+
     saver = tf.train.Saver()
     print('\n载入检查点...')
     ckpt = tf.train.get_checkpoint_state(logs_dir)
@@ -477,7 +478,7 @@ def freeze_graph_test(pb_path, image_path):
             #    label = '%.2f%% is a quan' % (out2[0][7] * 100)
 
             plt.imshow(im1)
-            plt.title(label)
+            #plt.title(label)
             plt.show()
 
 
@@ -486,9 +487,13 @@ def freeze_graph_test(pb_path, image_path):
             class_id = tf.argmax(score, 1)
             print("pre class_id:{}".format(sess.run(class_id)))
             return str(max_index)
+
+
+
 if __name__ == '__main__':
-     #training()
+     training()
      #eval()
-     #freeze_graph('logs_3\\model.ckpt-69000','logs_3\\pb\\frozen_model1.pb')
-     freeze_graph_test('logs_3\\pb\\frozen_model1.pb','data\\test1\\1.jpg')
+     #freeze_graph('logs_3\\model.ckpt-33000','logs_3\\pb\\frozen_model_33000_04_07.pb')
+     #freeze_graph_test('logs_3\\pb\\frozen_model1.pb','data\\test1\\1.jpg')
+     #freeze_graph_test('D:\\vs2017\\出窑服务图片识别版\\出窑服务图片识别版\\出窑服务图片识别版\\bin\\x64\\Debug\\logs_2\\pb\\frozen_model12.pb','data\\test1\\1.jpg')
 
